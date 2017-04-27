@@ -360,7 +360,7 @@ header.jumbotron{
     width:90%;
     margin:300px auto 0;
 	background:#fff;
-    background:rgba(255,255,255,0.9);
+    background:rgba(255,255,255,0.6);
     padding:20px 0;
 }
 
@@ -525,6 +525,25 @@ header.jumbotron{
 
 .services.bottom-row p {
     margin-top:48px;
+}
+
+#services img {
+    width: 60%;
+}
+
+.skills_icon_ajax {
+    margin-top: 46px;
+
+}
+
+.skills_icon_fire {
+    margin-top: 90px;
+}
+
+.javascript_icon {
+    width: 18%;
+    margin-left: 23px;
+    margin-right: 54px;
 }
 
 /*-----------------------
@@ -891,7 +910,8 @@ header.jumbotron{
 .modal-dialog{
     width:90%;
     max-width:1140px;
-    padding-top:50px;
+    margin-top: 0;
+    /*padding-top:50px;*/
 }
 
 .modal-content{
@@ -917,7 +937,7 @@ header.jumbotron{
 }
 
 .modal-header .close:hover{
-    color:#21b799;
+    color:#cc3300;
     opacity:1;
 }
 
@@ -946,7 +966,7 @@ header.jumbotron{
 
 .modal-body h1{
     color:#21b799;
-    margin:200px 0 24px;
+    margin:30px 0 24px;
     font-size:32px;
 }
 

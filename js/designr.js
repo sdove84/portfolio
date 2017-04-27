@@ -158,7 +158,7 @@ $(document).ready(function() {
 				});
 			},1000);
 		}).modal();
-		
+
 	});
 
 	$('#project-modal').on('hidden.bs.modal', function () {
@@ -169,7 +169,8 @@ $(document).ready(function() {
 			.html('')
 			.flexslider('destroy');
 	});
-	
+
+
 	/*============================================
 	Twitter Functions
 	==============================================*/
