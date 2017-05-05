@@ -2,11 +2,11 @@ $(document).ready(function() {
 	/*============================================
 	Page Preloader
 	==============================================*/
-	
+
 	$(window).load(function(){
 		$('#page-loader').fadeOut(500);
-	});	
-	
+	});
+
 	/*============================================
 	Navigation Functions
 	==============================================*/
@@ -14,7 +14,7 @@ $(document).ready(function() {
 		$('#main-nav').removeClass('scrolled');
 	}
 	else{
-		$('#main-nav').addClass('scrolled');    
+		$('#main-nav').addClass('scrolled');
 	}
 
 	$(window).scroll(function(){
@@ -22,7 +22,7 @@ $(document).ready(function() {
 			$('#main-nav').removeClass('scrolled');
 		}
 		else{
-			$('#main-nav').addClass('scrolled');    
+			$('#main-nav').addClass('scrolled');
 		}
 	});
 
@@ -71,7 +71,7 @@ $(document).ready(function() {
 			});
 		});
 	},{offset:'80%'});
-	
+
 	/*============================================
 	Project thumbs - Masonry
 	==============================================*/
@@ -135,16 +135,16 @@ $(document).ready(function() {
 		for (var i = 0; i < slides.length; ++i) {
 			slidesHtml = slidesHtml + '<li><img src='+slides[i]+' alt=""></li>';
 		}
-		
+
 		slidesHtml = slidesHtml + '</ul>';
-		
+
 
 		$('#project-modal').on('show.bs.modal', function () {
 			$(this).find('h1').text(title);
 			$(this).find('.btn').attr('href',link);
 			$(this).find('.project-descr').html(descr);
 			$(this).find('.image-wrapper').addClass('flexslider').html(slidesHtml);
-			
+
 			setTimeout(function(){
 				$('.image-wrapper.flexslider').flexslider({
 					slideshowSpeed: 3000,
@@ -174,83 +174,164 @@ $(document).ready(function() {
 	/*============================================
 	Twitter Functions
 	==============================================*/
-	var tweetsLength = $('#twitter-slider').data('tweets-length'),
-		widgetID = $('#twitter-slider').data('widget-id');
-	
-	var configTweets = {
-	  "id": widgetID,
-	  "domId": '',
-	  "maxTweets": tweetsLength,
-	  "enableLinks": true,
-	  "showUser": false,
-	  "showTime": true,
-	  "dateFunction": '',
-	  "showRetweet": false,
-	  "customCallback": handleTweets,
-	  "showInteraction": true
-	};
-	
-	twitterFetcher.fetch(configTweets);
+	// var tweetsLength = $('#twitter-slider').data('tweets-length'),
+	// 	widgetID = $('#twitter-slider').data('widget-id');
+    //
+	// var configTweets = {
+	//   "id": widgetID,
+	//   "domId": '',
+	//   "maxTweets": tweetsLength,
+	//   "enableLinks": true,
+	//   "showUser": false,
+	//   "showTime": true,
+	//   "dateFunction": '',
+	//   "showRetweet": false,
+	//   "customCallback": handleTweets,
+	//   "showInteraction": true
+	// };
+    //
+	// twitterFetcher.fetch(configTweets);
+    //
+	// function handleTweets(tweets){
+    //
+	// 	var x = tweets.length,
+	// 		n = 0,
+	// 		tweetsHtml = '<ul class="slides">';
+    //
+	// 	while(n < x) {
+	// 		tweetsHtml += '<li>' + tweets[n] + '</li>';
+	// 		n++;
+	// 	}
+    //
+	// 	tweetsHtml += '</ul>';
+	// 	$('#twitter-slider').html(tweetsHtml);
+    //
+	// 	$('.twitter_reply_icon').html("<i class='fa fa-reply'></i>");
+	// 	$('.twitter_retweet_icon').html("<i class='fa fa-retweet'></i>");
+	// 	$('.twitter_fav_icon').html("<i class='fa fa-heart'></i>");
+    //
+	// 	$('#twitter-slider').flexslider({
+	// 		prevText: '<i class="fa fa-angle-left"></i>',
+	// 		nextText: '<i class="fa fa-angle-right"></i>',
+	// 		slideshowSpeed: 5000,
+	// 		useCSS: true,
+	// 		controlNav: false,
+	// 		pauseOnAction: false,
+	// 		pauseOnHover: true,
+	// 		smoothHeight: false
+	// 	});
+	// }
 
-	function handleTweets(tweets){
-	
-		var x = tweets.length,
-			n = 0,
-			tweetsHtml = '<ul class="slides">';
-			
-		while(n < x) {
-			tweetsHtml += '<li>' + tweets[n] + '</li>';
-			n++;
-		}
-		
-		tweetsHtml += '</ul>';
-		$('#twitter-slider').html(tweetsHtml);
-		
-		$('.twitter_reply_icon').html("<i class='fa fa-reply'></i>");
-		$('.twitter_retweet_icon').html("<i class='fa fa-retweet'></i>");
-		$('.twitter_fav_icon').html("<i class='fa fa-heart'></i>");
 
-		$('#twitter-slider').flexslider({
-			prevText: '<i class="fa fa-angle-left"></i>',
-			nextText: '<i class="fa fa-angle-right"></i>',
-			slideshowSpeed: 5000,
-			useCSS: true,
-			controlNav: false, 
-			pauseOnAction: false, 
-			pauseOnHover: true,
-			smoothHeight: false
+
+
+
+        // Which album is currently being shown.
+        var albumSelected = 0;
+
+        // jQuery selectors for the albums.
+        var albumSelectors = [
+            $('#album-0'),
+            $('#album-1'),
+            $('#album-2'),
+			$('#album-3'),
+            $('#album-4'),
+			$('#album-5'),
+			$('#album-6'),
+			$('#album-7'),
+			$('#album-8')
+        ];
+
+        // Helper function to hide everything but the shown album.
+        function hideAndShowAlbums() {
+            //console.log('hideAndShowAlbums: ' + albumSelected);
+            for (var i = 0; i < albumSelectors.length; i++){
+                var selector = albumSelectors[i];
+                if (i === albumSelected) {
+                    $(selector).show();
+                } else {
+                    $(selector).hide();
+                }
+            }
+        }
+
+        // Start with three albums contents hidden, and music quote up.
+        hideAndShowAlbums();
+
+        // For each of the albums, clicking on it removes any other albums, and brings up the contents.
+        // Clicking on it again brings down the contents and restores album-0 (the blockquote).
+        $('.album-cover img').click(function(event) {
+            var albumId = event.target.id;
+            var albumClicked = parseInt(albumId.slice(-1));
+            //console.log('click: ' + albumClicked);
+
+            if (albumSelected === albumClicked) {
+                // Already selected this album; turn it off.
+                albumSelected = 0;
+            } else {
+                // Select the album clicked.
+                albumSelected = albumClicked;
+            }
+
+            hideAndShowAlbums();
+        });
+
+/*==============================================
+photo section
+================================================*/
+
+	// $(document).ready(function($) {
+
+		$('#myCarousel').carousel({
+			interval: 5000
 		});
-	}
+
+		//Handles the carousel thumbnails
+		$('[id^=carousel-selector-]').click(function () {
+			var id_selector = $(this).attr("id");
+			try {
+				var id = /-(\d+)$/.exec(id_selector)[1];
+				console.log(id_selector, id);
+				$('#myCarousel').carousel(parseInt(id));
+			} catch (e) {
+				console.log('Regex failed!', e);
+			}
+		});
+		// When the carousel slides, auto update the text
+		$('#myCarousel').on('slid.bs.carousel', function (e) {
+			var id = $('.item.active').data('slide-number');
+			$('#carousel-text').html($('#slide-content-'+id).html());
+		});
+	// });
+	/* ==============================================
+   GUITAR BUILDING MODAL
+   =============================================== */
+
+
+		$('.myModal').modal();
+
+
+
 	/*============================================
-	Resize Functions
-	==============================================*/
-	$(window).resize(function(){
-		$('.jumbotron').height($(window).height());
-		$('.message-box').css({'marginTop':$(window).height()*0.4});
-		scrollSpyRefresh();
-		waypointsRefresh();
-	});
-	
-	/*============================================
-	Backstretch Images
-	==============================================*/
+    Backstretch Images
+    ==============================================*/
 	$.backstretch('assets/header-bg.jpg');
 
 	$('body').append('<img class="preload-image" src="assets/contact-bg.jpg" style="display:none;"/>');
 
 	$('#about').waypoint(function(direction){
-	
+
 		if($('.preload-image').length){$('.preload-image').remove();}
-		
+
 		$('.backstretch').remove();
-	
+
 		if (direction=='down'){
 			$.backstretch('assets/contact-bg.jpg');
 		}else{
 			$.backstretch('assets/header-bg.jpg');
 		}
 	});
-	
+
 	/*============================================
 	Project Hover mask on IE
 	==============================================*/
@@ -261,7 +342,7 @@ $(document).ready(function() {
 			$( this ).stop(true,true).animate({opacity: 0});
 		}
 	);
-	
+
 	/*============================================
 	Placeholder Detection
 	==============================================*/
