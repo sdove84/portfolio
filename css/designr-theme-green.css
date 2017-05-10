@@ -670,6 +670,13 @@ hr.guitar-bottom-line-style {
 .carousel-inner>.item>img, .carousel-inner>.item>a>img {
     width: 100%;
 }
+.carousel-inner {
+    margin-top: 25px;
+}
+
+#register_clip {
+    width: 100%;
+}
 
 /*hr.guitar-bottom-line-style {*/
     /*border: 0;*/
@@ -1072,6 +1079,13 @@ hr.guitar-bottom-line-style {
     text-align: center;
     /*margin-bottom: 0;*/
     letter-spacing: 0;
+}
+
+#musician_photo {
+    width: 60%;
+    margin-left: 85px;
+    border: solid black 10px;
+    border-radius: 50px;
 }
 
 /*#musician-details {*/
