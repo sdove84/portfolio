@@ -224,7 +224,7 @@ $(document).ready(function() {
 
 
 
-
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
         // Which album is currently being shown.
         var albumSelected = 0;
@@ -239,7 +239,8 @@ $(document).ready(function() {
 			$('#album-5'),
 			$('#album-6'),
 			$('#album-7'),
-			$('#album-8')
+			$('#album-8'),
+			$('#album-9')
         ];
 
         // Helper function to hide everything but the shown album.
@@ -255,11 +256,11 @@ $(document).ready(function() {
             }
         }
 
-        // Start with three albums contents hidden, and music quote up.
+        // Start with 9 albums contents hidden, and my photo up.
         hideAndShowAlbums();
 
         // For each of the albums, clicking on it removes any other albums, and brings up the contents.
-        // Clicking on it again brings down the contents and restores album-0 (the blockquote).
+        // Clicking on it again brings down the contents and restores album-0 (my photo).
         $('.album-cover img').click(function(event) {
             var albumId = event.target.id;
             var albumClicked = parseInt(albumId.slice(-1));
@@ -308,7 +309,7 @@ photo section
    =============================================== */
 
 
-		$('.myModal').modal();
+		// $('.myModal').modal();
 
 
 
