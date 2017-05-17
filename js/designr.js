@@ -170,7 +170,6 @@ $(document).ready(function() {
 			.flexslider('destroy');
 	});
 
-
 	/*============================================
 	Twitter Functions
 	==============================================*/
@@ -281,7 +280,6 @@ $(document).ready(function() {
 photo section
 ================================================*/
 
-	// $(document).ready(function($) {
 
 		$('#myCarousel').carousel({
 			interval: 5000
@@ -303,7 +301,7 @@ photo section
 			var id = $('.item.active').data('slide-number');
 			$('#carousel-text').html($('#slide-content-'+id).html());
 		});
-	// });
+
 	/* ==============================================
    GUITAR BUILDING MODAL
    =============================================== */

@@ -592,7 +592,7 @@ header.jumbotron {
 ------------------------*/
 
 #skills {
-    padding-top: 80px;
+    padding-top: 0px;
     color: #30695a;
     background: #fff;
 }
@@ -645,7 +645,8 @@ hr.guitar-top-line-style {
     height: 10px;
     border: 0;
     box-shadow: 0 10px 15px -10px #00b38f inset;
-    margin-bottom: 46px;
+    margin-bottom: 60px;
+    margin-top: 0;
 }
 
 hr.guitar-bottom-line-style {
@@ -653,6 +654,11 @@ hr.guitar-bottom-line-style {
     border: 0;
     box-shadow: 0 -20px 16px -20px #00b38f inset;
     margin-top: -15px;
+}
+
+.skills-container {
+    padding-right: 0;
+    padding-left: 0;
 }
 
 /*=======================photo section========================*/
@@ -665,6 +671,7 @@ hr.guitar-bottom-line-style {
 
 .thumbnail {
     padding: 0;
+    cursor: pointer;
 }
 
 .carousel-inner>.item>img, .carousel-inner>.item>a>img {
@@ -692,7 +699,8 @@ hr.guitar-bottom-line-style {
 ------------------------*/
 
 #portfolio {
-    background: #fff;
+    background: #ddd;
+    padding-bottom: 40px;
 }
 
 #portfolio .section-title {
@@ -1073,6 +1081,7 @@ hr.guitar-bottom-line-style {
     font-weight: 400;
     text-align: center;
     color: #30695a;
+    margin-top: 36px;
 }
 
 #musician-text p {
@@ -1523,6 +1532,7 @@ hr.line-style {
 
 #main-footer p {
     color: #21b799;
+    margin-top: 25px;
     font-size: 14px;
     line-height: 24px;
     font-weight: 400;
