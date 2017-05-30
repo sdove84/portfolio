@@ -421,7 +421,6 @@ header.jumbotron {
 ------------------------*/
 
 #services {
-    /*background:#fff;*/
     background: url(../assets/cool_background.jpg);
     color: #999;
     padding: 80px 0;
@@ -563,8 +562,6 @@ header.jumbotron {
 }
 
 #about p {
-    /*font-size:24px;*/
-    /*line-height:36px;*/
     font-weight: 300;
     margin-bottom: 42px;
 }
@@ -597,50 +594,6 @@ header.jumbotron {
     background: #fff;
 }
 
-/*.skills .col-sm-3 {*/
-    /*margin-bottom: 80px;*/
-/*}*/
-
-/*#skills.cuda-section {*/
-    /*padding-bottom: 40px;*/
-/*}*/
-
-/*.chart {*/
-    /*position: relative;*/
-    /*display: inline-block;*/
-    /*width: 170px;*/
-    /*height: 170px;*/
-    /*margin-bottom: 50px;*/
-    /*text-align: center;*/
-/*}*/
-
-/*.chart canvas {*/
-    /*position: absolute;*/
-    /*top: 0;*/
-    /*left: 0;*/
-/*}*/
-
-/*.percent {*/
-    /*display: inline-block;*/
-    /*line-height: 170px;*/
-    /*font-size: 50px;*/
-    /*font-weight: 300;*/
-    /*z-index: 2;*/
-/*}*/
-
-/*.percent:after {*/
-    /*content: '%';*/
-    /*margin-left: 0.1em;*/
-    /*font-size: 40px;*/
-/*}*/
-
-/*#skills .skills h2 {*/
-    /*margin: 0 0 80px;*/
-    /*color: #30695a;*/
-    /*font-size: 24px;*/
-    /*font-weight: 300;*/
-/*}*/
-
 hr.guitar-top-line-style {
     height: 10px;
     border: 0;
@@ -664,9 +617,9 @@ hr.guitar-bottom-line-style {
 /*=======================photo section========================*/
 
 .hide-bullets {
-    list-style:none;
+    list-style: none;
     margin-left: -40px;
-    margin-top:20px;
+    margin-top: 20px;
 }
 
 .thumbnail {
@@ -674,9 +627,10 @@ hr.guitar-bottom-line-style {
     cursor: pointer;
 }
 
-.carousel-inner>.item>img, .carousel-inner>.item>a>img {
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
     width: 100%;
 }
+
 .carousel-inner {
     margin-top: 25px;
 }
@@ -684,15 +638,6 @@ hr.guitar-bottom-line-style {
 #register_clip {
     width: 100%;
 }
-
-/*hr.guitar-bottom-line-style {*/
-    /*border: 0;*/
-    /*height: 1px;*/
-    /*background-image: -webkit-linear-gradient(left, #f0f0f0, #00b38f, #f0f0f0);*/
-    /*background-image: -moz-linear-gradient(left, #f0f0f0, #00b38f, #f0f0f0);*/
-    /*background-image: -ms-linear-gradient(left, #f0f0f0, #00b38f, #f0f0f0);*/
-    /*background-image: -o-linear-gradient(left, #f0f0f0, #00b38f, #f0f0f0);*/
-/*}*/
 
 /*----------------------
 -----Portfolio Styles---
@@ -859,7 +804,6 @@ hr.guitar-bottom-line-style {
 
 .project-item .hover-mask .project-title {
     color: #fff;
-    /*margin: 0;*/
     margin-top: 35px;
     padding: 16px;
     font-size: 26px;
@@ -962,7 +906,6 @@ hr.guitar-bottom-line-style {
     width: 90%;
     max-width: 1140px;
     margin-top: 0;
-    /*padding-top:50px;*/
 }
 
 .modal-content {
@@ -1074,9 +1017,7 @@ hr.guitar-bottom-line-style {
 **      5. Musician section.
 *******************************/
 
-#musician-text h1{
-    /*padding-top: 2em;*/
-    /*padding-bottom: 2em;*/
+#musician-text h1 {
     font-size: 55px;
     font-weight: 400;
     text-align: center;
@@ -1086,7 +1027,6 @@ hr.guitar-bottom-line-style {
 
 #musician-text p {
     text-align: center;
-    /*margin-bottom: 0;*/
     letter-spacing: 0;
 }
 
@@ -1097,30 +1037,6 @@ hr.guitar-bottom-line-style {
     border-radius: 50px;
 }
 
-/*#musician-details {*/
-    /*background: #eee;*/
-    /*background-image: url("../images/faded_keyboard_mic.jpg");*/
-    /*background-repeat: no-repeat;*/
-    /*background-size: cover;*/
-/*}*/
-
-/*#musician-details blockquote {*/
-    /*color: #07889b;*/
-    /*border-left: 5px solid #07889b;*/
-    /*margin-top: 50px;*/
-/*}*/
-
-/*.album-summary {*/
-    /*height: 22%;*/
-    /*min-height: 160px;*/
-    /*margin-bottom: 16px;*/
-/*}*/
-
-
-
-
-
-
 hr.line-style {
     border: 0;
     height: 1px;
@@ -1129,7 +1045,6 @@ hr.line-style {
     background-image: -ms-linear-gradient(left, #00b38f, #f0f0f0, #00b38f);
     background-image: -o-linear-gradient(left, #00b38f, #f0f0f0, #00b38f);
 }
-
 
 .mp3_player_header {
     border: 11px solid black;
@@ -1142,6 +1057,7 @@ hr.line-style {
 .col-xs-4 {
     width: 30.333333%;
 }
+
 .album-cover {
     height: 100%;
     padding: 0;
@@ -1159,13 +1075,13 @@ hr.line-style {
     max-height: 100%;
 
 }
+
 .album-cover img:hover {
     border: 4px solid #00b38f;
     cursor: pointer;
 }
 
-.album-title  {
-    /*font-style: italic;*/
+.album-title {
     color: white;
     font-size: 21px;
 }
@@ -1178,13 +1094,11 @@ hr.line-style {
 #album-5,
 #album-6,
 #album-7,
-#album-8{
+#album-8 {
     display: none;
 }
 
 .album-contents {
-    /*background: #eee none;*/
-    /*color: black;*/
     overflow: hidden;
 }
 
@@ -1195,8 +1109,6 @@ hr.line-style {
 .album-contents table,
 .album-contents th,
 .album-contents td {
-    /*border: 1px solid gray;*/
-    /*font-size: 11px;*/
     padding: 7px 1.2em;
     border: 5px solid black;
     background-color: black;
@@ -1206,103 +1118,6 @@ hr.line-style {
 .album-contents li {
     font-size: 10px;
 }
-
-
-/*#twitter a:hover,*/
-/*#twitter a:active,*/
-/*#twitter a:focus{*/
-/*text-decoration:none;*/
-/*}*/
-
-/*#twitter h1{*/
-/*position:relative;*/
-/*}*/
-
-/*#twitter .tweet{*/
-/*font-size:24px;*/
-/*line-height:36px;*/
-/*font-weight:300;*/
-/*word-spacing:5px;*/
-/*margin-bottom:40px;*/
-/*}*/
-
-/*#twitter .tweet a:hover{*/
-/*text-decoration:underline;*/
-/*}*/
-
-/*#twitter .timePosted{*/
-/*display:inline-block;*/
-/*font-size:16px;*/
-/*font-weight:300;*/
-/*margin-bottom:20px;*/
-/*}*/
-
-/*#twitter .interact{*/
-/*margin-left:20px;*/
-/*padding-right:80px;*/
-/*display:inline-block;*/
-/*font-size:21px;*/
-/*font-weight:300;*/
-/*}*/
-
-/*#twitter .interact a {*/
-/*margin-right:6px;*/
-/*}*/
-
-/*#twitter .twitter-icon {*/
-/*padding-top:6px;*/
-/*text-align:center;*/
-/*}*/
-
-/*#twitter .fa-twitter {*/
-/*font-size:60px;*/
-/*}*/
-
-/*#twitter-slider{*/
-/*border:none;*/
-/*box-shadow:none;*/
-/*background:transparent;*/
-/*margin:0;*/
-/*padding:0;*/
-/*}*/
-
-/*#twitter-slider .flex-direction-nav {*/
-/*display:block;*/
-/*position:absolute;*/
-/*bottom:10px;*/
-/*right:0;*/
-/*}*/
-
-/*#twitter-slider .flex-direction-nav li{*/
-/*display:inline;*/
-/*}*/
-
-/*#twitter .flex-direction-nav .flex-prev,*/
-/*#twitter .flex-direction-nav .flex-next{*/
-/*background:transparent;*/
-/*background-image:none;*/
-/*display:inline;*/
-/*opacity:1;*/
-/*text-indent:0;*/
-/*position:relative;*/
-/*left:0;*/
-/*top:0;*/
-/*width:auto;*/
-/*height:42px;*/
-/*padding:0;*/
-/*margin:0;*/
-/*margin-left:7px;*/
-/*font-size:42px;*/
-/*line-height:42px;*/
-/*color:#fff;*/
-/*}*/
-
-/*#twitter-slider .flex-direction-nav a:hover,*/
-/*#twitter-slider .flex-direction-nav a:active,*/
-/*#twitter-slider .flex-direction-nav a:focus{*/
-/*text-decoration:none;*/
-/*}*/
-
 
 /*----------------------
 -----Contact Styles-----
@@ -1698,6 +1513,24 @@ hr.line-style {
         line-height: 82px;
     }
 
+    #services img {
+        width: 115%;
+    }
+
+    .skills_icon_ajax {
+        margin-top: 15px;
+
+    }
+
+    .skills_icon_fire {
+        margin-top: 82px;
+    }
+
+    .javascript_icon {
+        width: 19%;
+        margin-left: 34px;
+        margin-right: 23px;
+    }
 }
 
 @media (max-width: 991px) {
@@ -1804,6 +1637,20 @@ hr.line-style {
         line-height: 56px;
     }
 
+    .skills_icon_ajax {
+        margin-top: 15px;
+
+    }
+
+    .skills_icon_fire {
+        margin-top: 67px;
+    }
+
+    .javascript_icon {
+        width: 19%;
+        margin-left: 23px;
+        margin-right: 22px;
+    }
 }
 
 @media (max-width: 479px) {
@@ -1867,4 +1714,40 @@ hr.line-style {
         padding-top: 14px;
     }
 
+    #services .col-md-3 {
+        display: inline-block;
+    }
+
+    #services img {
+        width: 115%;
+    }
+
+    .skills_icon_ajax {
+        margin-top: 15px;
+
+    }
+
+    .skills_icon_fire {
+        margin-top: 31px;
+    }
+
+    .javascript_icon {
+        width: 20%;
+        margin-left: 11px;
+        margin-right: 7px;
+    }
+
+}
+
+@media (max-width: 320px){
+
+    .skills_icon_fire {
+        margin-top: 25px;
+    }
+
+    .javascript_icon {
+        width: 20%;
+        margin-left: 11px;
+        margin-right: 5px;
+    }
 }
