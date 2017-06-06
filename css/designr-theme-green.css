@@ -1001,6 +1001,43 @@ hr.guitar-bottom-line-style {
     opacity: 1;
 }
 
+/*------github buttons------*/
+.black-background {
+    background-color:#555;
+    border-color: #000000;
+}
+
+.black-background:focus {
+    background-color:#555;
+    border-color: #000000;
+}
+
+.black-background:active {
+    background-color:#555;
+    border-color: #000000;
+}
+
+.black-background:hover {
+    background-color: #000000;
+    border-color: #555;
+}
+
+.white {
+    color:#ffffff;
+}
+
+.white:focus {
+    color:#ffffff;
+}
+
+.white:active {
+    color:#ffffff;
+}
+
+.white:hover {
+    color:#ffffff;
+}
+
 /*----------------------
 -----Twitter Styles-----
 ------------------------*/
