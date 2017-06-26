@@ -17,7 +17,7 @@
     <link rel="apple-touch-icon" href="assets/sd.png">
     <link rel="apple-touch-icon" sizes="72x72" href="assets/sd.png">
     <link rel="apple-touch-icon" sizes="114x114" href="assets/sd.png">
-
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <!-- ==============================================
     CSS
     =============================================== -->
@@ -34,15 +34,16 @@
     <link href='http://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic,900'
           rel='stylesheet' type='text/css'>
 
+
     <!-- ==============================================
     JS
     =============================================== -->
 
     <!--[if lt IE 9]>
-    <script src="js/respond.min.js"></script>
+    <script src="js/respond.min.js" defer></script>
     <![endif]-->
 
-    <script type="text/javascript" src="js/libs/modernizr.min.js"></script>
+    <script type="text/javascript" src="js/libs/modernizr.min.js" defer></script>
 
 
     <script>
@@ -214,7 +215,7 @@ SKILLS
             <div class="col-md-3 details  col-md-pull-3 col-xs-3">
                 <img src="assets/bootstrap.svg">
             </div>
-        </div><!--End row (middle)-->
+        </div><!--End row (middle 1)-->
 
         <div class="row services scrollimation fade-left">
             <div class="col-md-3 col-xs-3">
@@ -229,7 +230,22 @@ SKILLS
             <div class="col-md-3 col-xs-3 details">
                 <img src="assets/json_icon.png">
             </div>
-        </div><!--End row (bottom) -->
+        </div><!--End row (middle 2) -->
+
+        <div class="row services bottom-row scrollimation fade-right">
+            <div class="col-md-3 col-md-push-3 col-xs-3">
+                <i class="devicon-photoshop-line colored"></i>
+            </div>
+            <div class="col-md-3 details col-md-pull-3 col-xs-3">
+
+            </div>
+            <div class="col-md-3 col-md-push-3 col-xs-3">
+
+            </div>
+            <div class="col-md-3 details  col-md-pull-3 col-xs-3">
+                <i class="devicon-illustrator-line colored"></i>
+            </div>
+        </div><!--End row (bottom)-->
 
     </div><!--End container -->
 
@@ -333,35 +349,38 @@ PORTFOLIO
             <!-- ==============================================
             END PROJECT ITEM
             =============================================== -->
+            <a class="project-item icons" href="#somelink" data-images="assets/projects/casino_tictactoe.png">
 
-            <a class="project-item icons ui-kits" href="#somelink" data-images="assets/projects/memory_match.png">
-
-                <img class="img-responsive project-image" src="assets/projects/memory_match.png" alt="">
+                <img class="img-responsive project-image" src="assets/projects/casino_tictactoe.png" alt="">
                 <!--Project thumb -->
 
                 <div class="hover-mask">
-                    <h2 class="project-title">Guitar Wars Memory Match</h2><!--Project Title -->
+                    <h2 class="project-title">Casino Tic-Tac-Toe</h2><!--Project Title -->
                 </div>
 
                 <!--==== Project Preview HTML ====-->
 
                 <div class="sr-only project-description">
                     <div class="clearfix">
-                        <p>Guitar Wars is a memory match game themed after star wars characters shredding on guitar.
-                            Test your memory and match all 18 cards and shred through the galaxy.</p>
+                        <p>A Casino themed Tic-Tac-Toe game with variable game board sizes and an option for Ultimate
+                            Tic-Tac-Toe.</p>
                         <strong>Details:</strong>
                         <ul>
-                            <li>Devoloped logic for game play and stats using JavaScript and JQuery.</li>
-                            <li>Independently developed</li>
+                            <li>Variable game board size from 3 x 3 up to 10 x 10 grid.</li>
+                            <li>Responsible for wire framing layout and over all look, feel, and styling of the game.
+                                Also implemented functionality for stats, and Ultimate Tic-Tac-Toe.
+                            </li>
+                            <li>Worked with in a team utilizing agile and scrum methodology.</li>
                         </ul>
                     </div>
-                    <p>Technologies Used: HTML5 & CSS3, JavaScript, jQuery, Git, GitHub</p>
+                    <p>Technologies Used: HTML5 & CSS3, JavaScript, jQuery, Bootstrap, Git, GitHub</p>
 
-                    <button type="button" class="btn btn-success" onclick="memorymatch_live()"><i
-                            class="fa fa-play-circle" aria-hidden="true"></i> Live Demo
+                    <button type="button" class="btn btn-success" onclick="casino_live()"><i class="fa fa-play-circle"
+                                                                                             aria-hidden="true"></i>
+                        Live Demo
                     </button>
-                    <button type="button" class="btn black-background white" onclick="memorymatch_github()"><i class="fa fa-github"
-                                                                                        aria-hidden="true"></i> Github
+                    <button type="button" class="btn black-background white" onclick="casino_github()"><i class="fa fa-github"
+                                                                                                          aria-hidden="true"></i> Github
                     </button>
                     <button type="button" class="btn btn-danger" data-dismiss="modal"><i class="fa fa-times-circle"
                                                                                          aria-hidden="true"></i> Close
@@ -417,117 +436,78 @@ PORTFOLIO
 
             </a><!--End Project Item -->
 
-            <a class="project-item ui-kits" href="http://www.google.com"
-               data-images="assets/projects/learning_tictactoe.png">
+            <!--<a class="project-item ui-kits" href="http://www.google.com"-->
+               <!--data-images="assets/projects/learning_tictactoe.png">-->
 
-                <img class="img-responsive project-image" src="assets/projects/learning_tictactoe.png" alt="">
+                <!--<img class="img-responsive project-image" src="assets/projects/learning_tictactoe.png" alt="">-->
+                <!--&lt;!&ndash;Project thumb &ndash;&gt;-->
+
+                <!--<div class="hover-mask">-->
+                    <!--<h2 class="project-title">Citation Tic-Tac-Toe</h2>&lt;!&ndash;Project Title &ndash;&gt;-->
+                <!--</div>-->
+
+                <!--&lt;!&ndash;==== Project Preview HTML ====&ndash;&gt;-->
+
+                <!--<div class="sr-only project-description">-->
+                    <!--<div class="clearfix">-->
+                        <!--<p>A Tic-Tac-Toe game with pop-up questions on proper MLA citation notation. You must answer all-->
+                            <!--questions within in the given time frame correctly to land your game piece on the selected-->
+                            <!--square.</p>-->
+                        <!--<strong>Details:</strong>-->
+                        <!--<ul>-->
+                            <!--<li>Variable game board size from 3 x 3 up to 12 x 12 grid with selectable win conditions.-->
+                            <!--</li>-->
+                            <!--<li>Questions to test students knowledge of proper MLA citation formatting.</li>-->
+                            <!--<li>Responsible for wire framing layout and over all look and feel of the game. Also-->
+                                <!--implemented functionality for stats and player selector.-->
+                            <!--</li>-->
+                            <!--<li>Worked in a team utilizing agile and scrum methodology.</li>-->
+                        <!--</ul>-->
+                    <!--</div>-->
+                    <!--<p>Technologies Used: HTML5 & CSS3, JavaScript, jQuery, Git, GitHub</p>-->
+
+                    <!--<button type="button" class="btn btn-success" onclick="citation_live()"><i class="fa fa-play-circle"-->
+                                                                                               <!--aria-hidden="true"></i>-->
+                        <!--Live Demo-->
+                    <!--</button>-->
+                    <!--<button type="button" class="btn black-background white" onclick="citation_github()"><i class="fa fa-github"-->
+                                                                                     <!--aria-hidden="true"></i> Github-->
+                    <!--</button>-->
+                    <!--<button type="button" class="btn btn-danger" data-dismiss="modal"><i class="fa fa-times-circle"-->
+                                                                                         <!--aria-hidden="true"></i> Close-->
+                    <!--</button>-->
+                <!--</div>-->
+
+            <!--</a>&lt;!&ndash;End Project Item &ndash;&gt;-->
+
+            <a class="project-item icons ui-kits" href="#somelink" data-images="assets/projects/memory_match.png">
+
+                <img class="img-responsive project-image" src="assets/projects/memory_match.png" alt="">
                 <!--Project thumb -->
 
                 <div class="hover-mask">
-                    <h2 class="project-title">Citation Tic-Tac-Toe</h2><!--Project Title -->
+                    <h2 class="project-title">Guitar Wars Memory Match</h2><!--Project Title -->
                 </div>
 
                 <!--==== Project Preview HTML ====-->
 
                 <div class="sr-only project-description">
                     <div class="clearfix">
-                        <p>A Tic-Tac-Toe game with pop-up questions on proper MLA citation notation. You must answer all
-                            questions within in the given time frame correctly to land your game piece on the selected
-                            square.</p>
+                        <p>Guitar Wars is a memory match game themed after star wars characters shredding on guitar.
+                            Test your memory and match all 18 cards and shred through the galaxy.</p>
                         <strong>Details:</strong>
                         <ul>
-                            <li>Variable game board size from 3 x 3 up to 12 x 12 grid with selectable win conditions.
-                            </li>
-                            <li>Questions to test students knowledge of proper MLA citation formatting.</li>
-                            <li>Responsible for wire framing layout and over all look and feel of the game. Also
-                                implemented functionality for stats and player selector.
-                            </li>
-                            <li>Worked in a team utilizing agile and scrum methodology.</li>
+                            <li>Devoloped logic for game play and stats using JavaScript and JQuery.</li>
+                            <li>Independently developed</li>
                         </ul>
                     </div>
                     <p>Technologies Used: HTML5 & CSS3, JavaScript, jQuery, Git, GitHub</p>
 
-                    <button type="button" class="btn btn-success" onclick="citation_live()"><i class="fa fa-play-circle"
-                                                                                               aria-hidden="true"></i>
-                        Live Demo
-                    </button>
-                    <button type="button" class="btn black-background white" onclick="citation_github()"><i class="fa fa-github"
-                                                                                     aria-hidden="true"></i> Github
-                    </button>
-                    <button type="button" class="btn btn-danger" data-dismiss="modal"><i class="fa fa-times-circle"
-                                                                                         aria-hidden="true"></i> Close
-                    </button>
-                </div>
-
-            </a><!--End Project Item -->
-
-            <a class="project-item icons" href="#somelink" data-images="assets/projects/casino_tictactoe.png">
-
-                <img class="img-responsive project-image" src="assets/projects/casino_tictactoe.png" alt="">
-                <!--Project thumb -->
-
-                <div class="hover-mask">
-                    <h2 class="project-title">Casino Tic-Tac-Toe</h2><!--Project Title -->
-                </div>
-
-                <!--==== Project Preview HTML ====-->
-
-                <div class="sr-only project-description">
-                    <div class="clearfix">
-                        <p>A Casino themed Tic-Tac-Toe game with variable game board sizes and an option for Ultimate
-                            Tic-Tac-Toe.</p>
-                        <strong>Details:</strong>
-                        <ul>
-                            <li>Variable game board size from 3 x 3 up to 10 x 10 grid.</li>
-                            <li>Responsible for wire framing layout and over all look, feel, and styling of the game.
-                                Also implemented functionality for stats, and Ultimate Tic-Tac-Toe.
-                            </li>
-                            <li>Worked with in a team utilizing agile and scrum methodology.</li>
-                        </ul>
-                    </div>
-                    <p>Technologies Used: HTML5 & CSS3, JavaScript, jQuery, Bootstrap, Git, GitHub</p>
-
-                    <button type="button" class="btn btn-success" onclick="casino_live()"><i class="fa fa-play-circle"
-                                                                                             aria-hidden="true"></i>
-                        Live Demo
-                    </button>
-                    <button type="button" class="btn black-background white" onclick="casino_github()"><i class="fa fa-github"
-                                                                                   aria-hidden="true"></i> Github
-                    </button>
-                    <button type="button" class="btn btn-danger" data-dismiss="modal"><i class="fa fa-times-circle"
-                                                                                         aria-hidden="true"></i> Close
-                    </button>
-                </div>
-
-            </a><!--End Project Item -->
-
-            <a class="project-item web-design" href="#somelink" data-images="assets/projects/calculator.png">
-
-                <img class="img-responsive project-image" src="assets/projects/calculator.png" alt="">
-                <!--Project thumb -->
-
-                <div class="hover-mask">
-                    <h2 class="project-title">Calculator</h2><!--Project Title -->
-                </div>
-
-                <!--==== Project Preview HTML ====-->
-
-                <div class="sr-only project-description">
-                    <div class="clearfix">
-                        <p>Calculator application that handles basic mathematical arithmetic operations.</p>
-                        <strong>Details:</strong>
-                        <ul>
-                            <li>Handles arithmetic operation including decimals</li>
-                            <li>Independently developed</li>
-                        </ul>
-                    </div>
-                    <p>Technologies Used: HTML5 & CSS3, JavaScript, jQuery, Bootstrap, Git, GitHub</p>
-
-                    <button type="button" class="btn btn-success" onclick="calculator_live()"><i
+                    <button type="button" class="btn btn-success" onclick="memorymatch_live()"><i
                             class="fa fa-play-circle" aria-hidden="true"></i> Live Demo
                     </button>
-                    <button type="button" class="btn black-background white" onclick="calculator_github()"><i class="fa fa-github"
-                                                                                       aria-hidden="true"></i> Github
+                    <button type="button" class="btn black-background white" onclick="memorymatch_github()"><i class="fa fa-github"
+                                                                                                               aria-hidden="true"></i> Github
                     </button>
                     <button type="button" class="btn btn-danger" data-dismiss="modal"><i class="fa fa-times-circle"
                                                                                          aria-hidden="true"></i> Close
@@ -536,46 +516,81 @@ PORTFOLIO
 
             </a><!--End Project Item -->
 
-            <a class="project-item web-design" href="http://www.google.com" data-images="assets/projects/sgt.png">
+            <!--<a class="project-item web-design" href="#somelink" data-images="assets/projects/calculator.png">-->
 
-                <img class="img-responsive project-image" src="assets/projects/sgt.png" alt=""><!--Project thumb -->
+                <!--<img class="img-responsive project-image" src="assets/projects/calculator.png" alt="">-->
+                <!--&lt;!&ndash;Project thumb &ndash;&gt;-->
 
-                <div class="hover-mask">
-                    <h2 class="project-title">Student Grade Table</h2><!--Project Title -->
-                </div>
+                <!--<div class="hover-mask">-->
+                    <!--<h2 class="project-title">Calculator</h2>&lt;!&ndash;Project Title &ndash;&gt;-->
+                <!--</div>-->
 
-                <!--==== Project Preview HTML ====-->
+                <!--&lt;!&ndash;==== Project Preview HTML ====&ndash;&gt;-->
 
-                <div class="sr-only project-description">
-                    <div class="clearfix">
-                        <p>An application that manages students' courses and grades and calculates their cumulative GPA.
+                <!--<div class="sr-only project-description">-->
+                    <!--<div class="clearfix">-->
+                        <!--<p>Calculator application that handles basic mathematical arithmetic operations.</p>-->
+                        <!--<strong>Details:</strong>-->
+                        <!--<ul>-->
+                            <!--<li>Handles arithmetic operation including decimals</li>-->
+                            <!--<li>Independently developed</li>-->
+                        <!--</ul>-->
+                    <!--</div>-->
+                    <!--<p>Technologies Used: HTML5 & CSS3, JavaScript, jQuery, Bootstrap, Git, GitHub</p>-->
 
-                        </p>
-                        <strong>Details:</strong>
-                        <ul>
-                            <li>Utilize AJAX requests to make API calls to the database to handle CRUD functionality of
-                                the application.
-                            </li>
-                            <li>Utilized Bootstrap for layout of the application and UI.</li>
-                            <li>Independently developed</li>
-                        </ul>
-                    </div>
-                    <p>Technologies Used: HTML5 & CSS3, JavaScript, jQuery, Bootstrap, AJAX, Git, GitHub</p>
+                    <!--<button type="button" class="btn btn-success" onclick="calculator_live()"><i-->
+                            <!--class="fa fa-play-circle" aria-hidden="true"></i> Live Demo-->
+                    <!--</button>-->
+                    <!--<button type="button" class="btn black-background white" onclick="calculator_github()"><i class="fa fa-github"-->
+                                                                                       <!--aria-hidden="true"></i> Github-->
+                    <!--</button>-->
+                    <!--<button type="button" class="btn btn-danger" data-dismiss="modal"><i class="fa fa-times-circle"-->
+                                                                                         <!--aria-hidden="true"></i> Close-->
+                    <!--</button>-->
+                <!--</div>-->
 
-                    <button type="button" class="btn btn-success" onclick="sgt_live()"><i class="fa fa-play-circle"
-                                                                                          aria-hidden="true"></i> Live
-                        Demo
-                    </button>
-                    <button type="button" class="btn black-background white" onclick="sgt_github()"><i class="fa fa-github"
-                                                                                aria-hidden="true"></i> Github
-                    </button>
-                    <button type="button" class="btn btn-danger" data-dismiss="modal"><i class="fa fa-times-circle"
-                                                                                         aria-hidden="true"></i> Close
-                    </button>
+            <!--</a>&lt;!&ndash;End Project Item &ndash;&gt;-->
 
-                </div>
+            <!--<a class="project-item web-design" href="http://www.google.com" data-images="assets/projects/sgt.png">-->
 
-            </a><!--End Project Item -->
+                <!--<img class="img-responsive project-image" src="assets/projects/sgt.png" alt="">&lt;!&ndash;Project thumb &ndash;&gt;-->
+
+                <!--<div class="hover-mask">-->
+                    <!--<h2 class="project-title">Student Grade Table</h2>&lt;!&ndash;Project Title &ndash;&gt;-->
+                <!--</div>-->
+
+                <!--&lt;!&ndash;==== Project Preview HTML ====&ndash;&gt;-->
+
+                <!--<div class="sr-only project-description">-->
+                    <!--<div class="clearfix">-->
+                        <!--<p>An application that manages students' courses and grades and calculates their cumulative GPA.-->
+
+                        <!--</p>-->
+                        <!--<strong>Details:</strong>-->
+                        <!--<ul>-->
+                            <!--<li>Utilize AJAX requests to make API calls to the database to handle CRUD functionality of-->
+                                <!--the application.-->
+                            <!--</li>-->
+                            <!--<li>Utilized Bootstrap for layout of the application and UI.</li>-->
+                            <!--<li>Independently developed</li>-->
+                        <!--</ul>-->
+                    <!--</div>-->
+                    <!--<p>Technologies Used: HTML5 & CSS3, JavaScript, jQuery, Bootstrap, AJAX, Git, GitHub</p>-->
+
+                    <!--<button type="button" class="btn btn-success" onclick="sgt_live()"><i class="fa fa-play-circle"-->
+                                                                                          <!--aria-hidden="true"></i> Live-->
+                        <!--Demo-->
+                    <!--</button>-->
+                    <!--<button type="button" class="btn black-background white" onclick="sgt_github()"><i class="fa fa-github"-->
+                                                                                <!--aria-hidden="true"></i> Github-->
+                    <!--</button>-->
+                    <!--<button type="button" class="btn btn-danger" data-dismiss="modal"><i class="fa fa-times-circle"-->
+                                                                                         <!--aria-hidden="true"></i> Close-->
+                    <!--</button>-->
+
+                <!--</div>-->
+
+            <!--</a>&lt;!&ndash;End Project Item &ndash;&gt;-->
 
         </div><!-- End projects -->
 
@@ -1072,19 +1087,16 @@ FOOTER
 <!-- ==============================================
 SCRIPTS
 =============================================== -->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="js/libs/jquery-1.9.1.min.js">\x3C/script>')</script>
-
-<script src="js/libs/bootstrap.min.js"></script>
-<script src='js/jquery.scrollto.js'></script>
-<script src='js/jquery.flexslider.min.js'></script>
-<script src='js/twitterFetcher_min.js'></script>
-<script src='js/jquery.masonry.min.js'></script>
-<script src="js/waypoints.min.js"></script>
-<script src="js/jquery.easypiechart.min.js"></script>
-<script src="js/jquery.backstretch.min.js"></script>
-<script src="js/contact.js"></script>
-<script src="js/designr.js"></script>
+<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" defer></script>-->
+<script>window.jQuery || document.write('<script src="js/libs/jquery-1.9.1.min.js" defer>\x3C/script>')</script>
+<script src="js/libs/bootstrap.min.js" defer></script>
+<script src='js/jquery.scrollto.js' defer></script>
+<script src='js/jquery.flexslider.min.js' defer></script>
+<script src='js/jquery.masonry.min.js' defer></script>
+<script src="js/waypoints.min.js" defer></script>
+<script src="js/jquery.backstretch.min.js" defer></script>
+<script src="js/contact.js" defer></script>
+<script src="js/designr.js" defer></script>
 </body>
 
 </html>

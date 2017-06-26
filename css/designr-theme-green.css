@@ -528,12 +528,12 @@ header.jumbotron {
 }
 
 .skills_icon_ajax {
-    margin-top: 46px;
+    margin-top: 24px;
 
 }
 
 .skills_icon_fire {
-    margin-top: 90px;
+    margin-top: 67px;
 }
 
 .javascript_icon {
@@ -541,6 +541,27 @@ header.jumbotron {
     margin-left: 23px;
     margin-right: 54px;
 }
+
+.devicon-photoshop-line.colored,
+.devicon-photoshop-plain.colored {
+    color: #41cdf4;
+    background: rgba(35, 20, 17, 0.6);
+    font-size: 9em;
+    /*padding-left: 6%;*/
+    margin-left: 6%;
+
+}
+
+.devicon-illustrator-line.colored {
+    /*color: #f4a041;*/
+    background: rgba(35, 20, 17, 0.6);
+    font-size: 9em;
+    /*padding-left: 6%;*/
+    margin-left: 6%;
+
+}
+
+
 
 /*-----------------------
 ------About Styles-------
@@ -726,6 +747,7 @@ hr.guitar-bottom-line-style {
     position: relative;
     margin: 0;
     width: 350px;
+    height: 191px;
     -webkit-transform: scale(1);
     -moz-transform: scale(1);
     -ms-transform: scale(1);
@@ -1161,9 +1183,10 @@ hr.line-style {
 ------------------------*/
 
 #contact {
-    background: transparent;
+    /*background: transparent;*/
     color: #fff;
     padding: 80px 0;
+    background: rgba(35, 31, 17, 0.6);
 }
 
 #contact .section-title {
