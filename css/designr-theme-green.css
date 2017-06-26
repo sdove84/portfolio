@@ -421,9 +421,10 @@ header.jumbotron {
 ------------------------*/
 
 #services {
-    background: url(../assets/cool_background.jpg);
+    /*background: url(../assets/cool_background.jpg);*/
     color: #999;
     padding: 80px 0;
+    background: rgba(158,215,194,0.6);
 }
 
 #services .row.line {
@@ -440,6 +441,10 @@ header.jumbotron {
     background: #21b799;
     border: 5px solid #fff;
     border-radius: 50%;
+}
+
+.row {
+    margin-left: 53px;
 }
 
 .services .icon {
@@ -646,6 +651,7 @@ hr.guitar-bottom-line-style {
 .thumbnail {
     padding: 0;
     cursor: pointer;
+
 }
 
 .carousel-inner > .item > img, .carousel-inner > .item > a > img {
