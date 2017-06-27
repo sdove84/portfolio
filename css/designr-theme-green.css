@@ -1642,6 +1642,34 @@ hr.line-style {
         margin-left: 15%;
 
     }
+
+    .devicon-amazonwebservices-plain-wordmark.colored {
+        font-size: 12em;
+    }
+
+    .devicon-linux-plain.colored {
+        font-size: 10em;
+        margin-left: 6%;
+    }
+
+    .devicon-php-plain {
+        font-size: 12em;
+        color: rebeccapurple;
+    }
+
+    .devicon-mysql-plain-wordmark.colored {
+        font-size: 12em;
+    }
+
+    .devicon-ubuntu-plain-wordmark.colored {
+        font-size: 12em;
+        margin-left: 0%;
+    }
+
+    .devicon-apache-line-wordmark {
+        font-size: 12em;
+        color: white;
+    }
 }
 
 @media (max-width: 991px) {
@@ -1684,6 +1712,34 @@ hr.line-style {
         /*padding-left: 6%;*/
         margin-left: 6%;
 
+    }
+
+    .devicon-amazonwebservices-plain-wordmark.colored {
+        font-size: 12em;
+    }
+
+    .devicon-linux-plain.colored {
+        font-size: 10em;
+        margin-left: 6%;
+    }
+
+    .devicon-php-plain {
+        font-size: 12em;
+        color: rebeccapurple;
+    }
+
+    .devicon-mysql-plain-wordmark.colored {
+        font-size: 12em;
+    }
+
+    .devicon-ubuntu-plain-wordmark.colored {
+        font-size: 12em;
+        margin-left: -15%;
+    }
+
+    .devicon-apache-line-wordmark {
+        font-size: 12em;
+        color: white;
     }
 
 }
@@ -1799,6 +1855,34 @@ hr.line-style {
         margin-left: 16%;
         line-height: inherit;
     }
+
+    .devicon-amazonwebservices-plain-wordmark.colored {
+        font-size: 12em;
+    }
+
+    .devicon-linux-plain.colored {
+        font-size: 10em;
+        margin-left: 6%;
+    }
+
+    .devicon-php-plain {
+        font-size: 12em;
+        color: rebeccapurple;
+    }
+
+    .devicon-mysql-plain-wordmark.colored {
+        font-size: 12em;
+    }
+
+    .devicon-ubuntu-plain-wordmark.colored {
+        font-size: 12em;
+        margin-left: -15%;
+    }
+
+    .devicon-apache-line-wordmark {
+        font-size: 12em;
+        color: white;
+    }
 }
 
 @media (max-width: 479px) {
@@ -1904,6 +1988,33 @@ hr.line-style {
         line-height: inherit;
     }
 
+    .devicon-amazonwebservices-plain-wordmark.colored {
+        font-size: 5em;
+    }
+
+    .devicon-linux-plain.colored {
+        font-size: 5em;
+        margin-left: 6%;
+    }
+
+    .devicon-php-plain {
+        font-size: 5em;
+        color: rebeccapurple;
+    }
+
+    .devicon-mysql-plain-wordmark.colored {
+        font-size: 5em;
+    }
+
+    .devicon-ubuntu-plain-wordmark.colored {
+        font-size: 5em;
+        margin-left: -15%;
+    }
+
+    .devicon-apache-line-wordmark {
+        font-size: 5em;
+        color: white;
+    }
 }
 
 @media (max-width: 320px) {
@@ -1934,5 +2045,33 @@ hr.line-style {
         /*padding-left: 6%;*/
         margin-left: 11%;
 
+    }
+
+    .devicon-amazonwebservices-plain-wordmark.colored {
+        font-size: 4em;
+    }
+
+    .devicon-linux-plain.colored {
+        font-size: 4em;
+        margin-left: 6%;
+    }
+
+    .devicon-php-plain {
+        font-size: 5em;
+        color: rebeccapurple;
+    }
+
+    .devicon-mysql-plain-wordmark.colored {
+        font-size: 5em;
+    }
+
+    .devicon-ubuntu-plain-wordmark.colored {
+        font-size: 4em;
+        margin-left: -15%;
+    }
+
+    .devicon-apache-line-wordmark {
+        font-size: 4em;
+        color: white;
     }
 }
