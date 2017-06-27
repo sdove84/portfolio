@@ -443,9 +443,9 @@ header.jumbotron {
     border-radius: 50%;
 }
 
-#services .row {
-    margin-left: 53px;
-}
+/*#services .row {*/
+    /*margin-left: 53px;*/
+/*}*/
 
 .services .icon {
     position: relative;
@@ -1598,6 +1598,24 @@ hr.line-style {
         margin-left: 34px;
         margin-right: 23px;
     }
+
+    .devicon-photoshop-line.colored,
+    .devicon-photoshop-plain.colored {
+        color: #41cdf4;
+        background: rgba(35, 20, 17, 0.6);
+        font-size: 12em;
+        /*padding-left: 6%;*/
+        margin-left: 15%;
+    }
+
+    .devicon-illustrator-line.colored {
+        /*color: #f4a041;*/
+        background: rgba(35, 20, 17, 0.6);
+        font-size: 12em;
+        /*padding-left: 6%;*/
+        margin-left: 15%;
+
+    }
 }
 
 @media (max-width: 991px) {
@@ -1622,6 +1640,24 @@ hr.line-style {
 
     .jumbotron .right-col p {
         padding: 10px;
+    }
+
+    .devicon-photoshop-line.colored,
+    .devicon-photoshop-plain.colored {
+        color: #41cdf4;
+        background: rgba(35, 20, 17, 0.6);
+        font-size: 9em;
+        /*padding-left: 6%;*/
+        margin-left: 6%;
+    }
+
+    .devicon-illustrator-line.colored {
+        /*color: #f4a041;*/
+        background: rgba(35, 20, 17, 0.6);
+        font-size: 9em;
+        /*padding-left: 6%;*/
+        margin-left: 6%;
+
     }
 
 }
@@ -1718,6 +1754,25 @@ hr.line-style {
         margin-left: 23px;
         margin-right: 22px;
     }
+
+    .devicon-photoshop-line.colored,
+    .devicon-photoshop-plain.colored {
+        color: #41cdf4;
+        background: rgba(35, 20, 17, 0.6);
+        font-size: 9em;
+        /*padding-left: 6%;*/
+        margin-left: 16%;
+        line-height: inherit;
+    }
+
+    .devicon-illustrator-line.colored {
+        /*color: #f4a041;*/
+        background: rgba(35, 20, 17, 0.6);
+        font-size: 9em;
+        /*padding-left: 6%;*/
+        margin-left: 16%;
+        line-height: inherit;
+    }
 }
 
 @media (max-width: 479px) {
@@ -1804,9 +1859,28 @@ hr.line-style {
         margin-right: 7px;
     }
 
+    .devicon-photoshop-line.colored,
+    .devicon-photoshop-plain.colored {
+        color: #41cdf4;
+        background: rgba(35, 20, 17, 0.6);
+        font-size: 4em;
+        /*padding-left: 6%;*/
+        margin-left: 9%;
+        line-height: inherit;
+    }
+
+    .devicon-illustrator-line.colored {
+        /*color: #f4a041;*/
+        background: rgba(35, 20, 17, 0.6);
+        font-size: 4em;
+        /*padding-left: 6%;*/
+        margin-left: 12%;
+        line-height: inherit;
+    }
+
 }
 
-@media (max-width: 320px){
+@media (max-width: 320px) {
 
     .skills_icon_fire {
         margin-top: 25px;
@@ -1816,5 +1890,23 @@ hr.line-style {
         width: 20%;
         margin-left: 11px;
         margin-right: 5px;
+    }
+
+    .devicon-photoshop-line.colored,
+    .devicon-photoshop-plain.colored {
+        color: #41cdf4;
+        background: rgba(35, 20, 17, 0.6);
+        font-size: 3em;
+        /*padding-left: 6%;*/
+        margin-left: 12%;
+    }
+
+    .devicon-illustrator-line.colored {
+        /*color: #f4a041;*/
+        background: rgba(35, 20, 17, 0.6);
+        font-size: 3em;
+        /*padding-left: 6%;*/
+        margin-left: 11%;
+
     }
 }
