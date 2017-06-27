@@ -566,7 +566,33 @@ header.jumbotron {
 
 }
 
+.devicon-amazonwebservices-plain-wordmark.colored {
+    font-size: 12em;
+}
 
+.devicon-linux-plain.colored {
+    font-size: 10em;
+    margin-left: 6%;
+}
+
+.devicon-php-plain {
+    font-size: 12em;
+    color: rebeccapurple;
+}
+
+.devicon-mysql-plain-wordmark.colored {
+    font-size: 12em;
+}
+
+.devicon-ubuntu-plain-wordmark.colored {
+    font-size: 12em;
+    margin-left: -15%;
+}
+
+.devicon-apache-line-wordmark {
+    font-size: 12em;
+    color: white;
+}
 
 /*-----------------------
 ------About Styles-------
