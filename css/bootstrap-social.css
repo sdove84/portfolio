@@ -10,11 +10,6 @@
     height: 52px;
 }
 
-.res_footer_icon:hover{
-    cursor: pointer;
-
-}
-
 .btn-social {
     position: relative;
     padding-left: 44px;
