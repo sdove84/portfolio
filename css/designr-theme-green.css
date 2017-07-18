@@ -1138,12 +1138,74 @@ hr.line-style {
     background-image: -o-linear-gradient(left, #00b38f, #f0f0f0, #00b38f);
 }
 
+audio#player {
+    border: 25px solid black;
+    border-radius: 21px 21px 0 0;
+    border-top: 55px solid black;
+    border-bottom: 0;
+    padding: 0;
+    height: 47px;
+}
+
 .mp3_player_header {
     border: 11px solid black;
+    border-top: 25px solid black;
     border-radius: 21px 21px 0px 0px;
     padding-left: 0;
-    padding-top: 16px;
+    padding-top: 25px;
+    padding-bottom: 25px;
     background-color: gray;
+}
+
+.song_button {
+    margin-left: 3%;
+}
+
+.black-background1 {
+    background-color:#000000;
+    border-color: #555;
+}
+
+.black-background1:focus {
+    background-color:#000000;
+    border-color: #555;
+}
+
+.black-background1:active {
+    background-color:#000000;
+    border-color: #555;
+}
+
+.black-background1:hover {
+    background-color: #555;
+    border-color: #000000;
+}
+
+.white1 {
+    color:#ffffff;
+    margin-left: 3%;
+}
+
+.white1:focus {
+    color:#ffffff;
+}
+
+.white:active {
+    color:#ffffff;
+}
+
+.white1:hover {
+    color:#ffffff;
+}
+
+h2 {
+    width: 122%;
+}
+
+#album-1, #album-2, #album-3, #album-4, #album-5, #album-6, #album-7, #album-8, #album-9 {
+    background-color: black;
+    border-radius: 0 0 21px 21px;
+    padding-bottom: 30px;
 }
 
 .col-xs-4 {
@@ -1186,7 +1248,8 @@ hr.line-style {
 #album-5,
 #album-6,
 #album-7,
-#album-8 {
+#album-8,
+#album-9 {
     display: none;
 }
 
@@ -1195,7 +1258,8 @@ hr.line-style {
 }
 
 .album-contents h4 {
-    margin-top: 20px;
+    margin-top: 0;
+    width: 166%;
 }
 
 .album-contents table,
