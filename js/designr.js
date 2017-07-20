@@ -241,8 +241,6 @@ $(document).ready(function () {
         if (this1 === this2) {
             var message = $(".song").html("Now Playing: ");
             $(".song").append(message, $(this).text());
-
-
         }
     });
 
