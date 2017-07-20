@@ -1117,7 +1117,7 @@ hr.guitar-bottom-line-style {
     margin-top: 36px;
 }
 
-#musician-text p {
+#musician-text .instructions {
     text-align: center;
     letter-spacing: 0;
 }
@@ -1262,6 +1262,10 @@ h2 {
     width: 166%;
 }
 
+.album-contents h2 {
+    margin-bottom: 0;
+}
+
 .album-contents table,
 .album-contents th,
 .album-contents td {
@@ -1273,6 +1277,7 @@ h2 {
 .album-contents p,
 .album-contents li {
     font-size: 10px;
+    margin-bottom: 0;
 }
 
 /*----------------------
