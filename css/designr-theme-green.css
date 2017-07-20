@@ -2084,6 +2084,32 @@ h2 {
         font-size: 5em;
         color: white;
     }
+
+    .album-cover img {
+        height: 145px;
+    }
+
+    .album-summary {
+        padding: 0;
+    }
+
+    .album_container {
+        width: 110%;
+        padding-left: 0;
+        padding-right: 0px;
+    }
+
+    audio#player {
+        width: 100%;
+    }
+
+    .mp3_album_img {
+        width: 57%;
+    }
+
+    #musician_photo {
+        margin-left: 62px;
+    }
 }
 
 @media (max-width: 320px) {
